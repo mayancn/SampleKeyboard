@@ -18,7 +18,7 @@ public class SampleIME extends InputMethodService implements KeyboardView.OnKeyb
     public View onCreateInputView() {
         super.onCreateInputView();
         keyboardView = (KeyboardView)getLayoutInflater().inflate(R.layout.keyboard, null);
-        keyboard = new Keyboard(this, R.xml.qwerty);
+        keyboard = new Keyboard(this, R.xml.marathi);
         keyboardView.setKeyboard(keyboard);
         keyboardView.setOnKeyboardActionListener(this);
         return keyboardView;
@@ -28,11 +28,6 @@ public class SampleIME extends InputMethodService implements KeyboardView.OnKeyb
     }
     @Override
     public void onRelease(int primaryCode) {
-        if(primaryCode == Keyboard.KEYCODE_SHIFT){
-            keyboard = new Keyboard(this, R.xml.qwerty);
-            keyboardView.setKeyboard(keyboard);
-            keyboardView.setOnKeyboardActionListener(this);
-        }
     }
     @Override
     public void onKey(int primaryCode, int[] keyCodes) {
@@ -44,12 +39,12 @@ public class SampleIME extends InputMethodService implements KeyboardView.OnKeyb
             case Keyboard.KEYCODE_SHIFT:
                 if(caps){
                     caps = !caps;
-                    keyboard = new Keyboard(this, R.xml.qwerty_shift);
+                    keyboard = new Keyboard(this, R.xml.marathi_shift);
                     keyboardView.setKeyboard(keyboard);
                     keyboardView.setOnKeyboardActionListener(this);
                 }else{
                     caps = !caps;
-                    keyboard = new Keyboard(this, R.xml.qwerty_shift);
+                    keyboard = new Keyboard(this, R.xml.marathi);
                     keyboardView.setKeyboard(keyboard);
                     keyboardView.setOnKeyboardActionListener(this);
                 }
