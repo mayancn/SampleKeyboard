@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Keyboard
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:keyWidth="10%p"
+    android:horizontalGap="0px"
+    android:verticalGap="0px"
+    android:keyHeight="60dp">
+
+    <Row>
+        <Key android:keyLabel="\u0912" android:keyEdgeFlags="left"/>
+        <Key android:keyLabel="\u090D"/>
+        <Key android:keyLabel="\u0945"/>
+        <Key android:keyLabel="\u0930"/>
+        <Key android:keyLabel="\u094D"/>
+        <Key android:keyLabel="\u091E"/>
+        <Key android:keyLabel="\u0302"/>
+        <Key android:keyLabel="\u096D"/>
+        <Key android:keyLabel="\u096E"/>
+        <Key android:keyLabel="\u096F"/>
+        <Key android:keyLabel="\u0966"/>
+        <Key android:keyLabel="\u0903"/>
+        <Key android:keyLabel="\u0943" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:keyLabel="\u0914" android:keyEdgeFlags="left"/>
+        <Key android:keyLabel="\u0910"/>
+        <Key android:keyLabel="\u0906"/>
+        <Key android:keyLabel="\u0908"/>
+        <Key android:keyLabel="\u090a"/>
+        <Key android:keyLabel="\u092d"/>
+        <Key android:keyLabel="\u0919"/>
+        <Key android:keyLabel="\u0918"/>
+        <Key android:keyLabel="\u0927"/>
+        <Key android:keyLabel="\u091D"/>
+        <Key android:keyLabel="\u0922"/>
+        <Key android:keyLabel="\u091E"/>
+        <Key android:keyLabel="\u0911" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:keyLabel="\u0913" android:keyEdgeFlags="left"/>
+        <Key android:keyLabel="\u090F"/>
+        <Key android:keyLabel="\u0905"/>
+        <Key android:keyLabel="\u0907"/>
+        <Key android:keyLabel="\u0909"/>
+        <Key android:keyLabel="\u092B"/>
+        <Key android:keyLabel="\u0931"/>
+        <Key android:keyLabel="\u0916"/>
+        <Key android:keyLabel="\u0925"/>
+        <Key android:keyLabel="\u091B"/>
+        <Key android:keyLabel="\u0920" android:keyEdgeFlags="right"/>
+    </Row>
+    <Row>
+        <Key android:keyLabel="\u090E" android:keyEdgeFlags="left"/>
+        <Key android:keyLabel="\u0901"/>
+        <Key android:keyLabel="\u0923"/>
+        <Key android:keyLabel="\u0929"/>
+        <Key android:keyLabel="\u0934"/>
+        <Key android:keyLabel="\u0933"/>
+        <Key android:keyLabel="\u0936"/>
+        <Key android:keyLabel="\u0937"/>
+        <Key android:keyLabel="\u0964"/>
+        <Key android:keyLabel="\u095F" android:keyEdgeFlags="right"/>
+    </Row>
+
+    <Row android:rowEdgeFlags="bottom">
+        <Key android:codes="-1" android:keyLabel="CAPS" android:keyWidth="20%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="32" android:keyLabel="SPACE" android:keyWidth="40%p" android:isRepeatable="true"/>
+        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true"/>
+        <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
+    </Row>
+</Keyboard>
