@@ -52,25 +52,30 @@
         <Key android:keyLabel="\u0920" android:keyEdgeFlags="right"/>
     </Row>
     <Row>
-        <Key android:keyLabel="\u090E" android:keyEdgeFlags="left"/>
-        <Key android:keyLabel="\u0901"/>
-        <Key android:keyLabel="\u0923"/>
-        <Key android:keyLabel="\u0929"/>
-        <Key android:keyLabel="\u0934"/>
-        <Key android:keyLabel="\u0933"/>
-        <Key android:keyLabel="\u0936"/>
-        <Key android:keyLabel="\u0937"/>
-        <Key android:keyLabel="\u0964"/>
-        <Key android:keyLabel="\u095F" android:keyEdgeFlags="right"/>
+        <Key android:codes="-1" android:keyIcon="@drawable/sym_keyboard_shift"
+            android:keyWidth="15%p" android:isModifier="true"
+            android:isSticky="true" android:keyEdgeFlags="left"/>
+        <Key android:codes="122" android:keyLabel="z"/>
+        <Key android:codes="120" android:keyLabel="x"/>
+        <Key android:codes="99" android:keyLabel="c"/>
+        <Key android:codes="118" android:keyLabel="v"/>
+        <Key android:codes="98" android:keyLabel="b"/>
+        <Key android:codes="110" android:keyLabel="n"/>
+        <Key android:codes="109" android:keyLabel="m"/>
+        <Key android:codes="-5" android:keyIcon="@drawable/sym_keyboard_delete"
+            android:keyWidth="15%p" android:keyEdgeFlags="right"
+            android:isRepeatable="true"/>
     </Row>
 
     <Row android:rowEdgeFlags="bottom">
-        <Key android:codes="-1" android:keyLabel="Shift" android:keyWidth="20%p" android:keyEdgeFlags="left"/>
-        <Key android:codes="32" android:keyLabel="space" android:keyWidth="40%p" android:isRepeatable="true"/>
-        <Key android:codes="-5" android:keyLabel="DEL" android:keyWidth="20%p" android:isRepeatable="true"/>
-        <Key android:codes="-4" android:keyLabel="DONE" android:keyWidth="20%p" android:keyEdgeFlags="right"/>
-    </Row>
-    <Row android:rowEdgeFlags="bottom">
-        <Key android:keyLabel="Change" android:keyWidth="20%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-6" android:keyIcon="@drawable/sym_keyboard_language_switch"
+            android:keyWidth="10%p" android:keyEdgeFlags="left"/>
+        <Key android:codes="-2" android:keyLabel="123" android:keyWidth="10%p"/>
+        <Key android:codes="32" android:keyIcon="@drawable/sym_keyboard_space"
+            android:keyWidth="45%p" android:isRepeatable="true"/>
+        <Key android:codes="46,44" android:keyLabel=". ,"
+            android:keyWidth="15%p"/>
+        <Key android:codes="10" android:keyIcon="@drawable/sym_keyboard_return"
+            android:keyWidth="20%p" android:keyEdgeFlags="right"/>
     </Row>
 </Keyboard>

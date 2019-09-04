@@ -1,0 +1,43 @@
+# British QWERTY keyboard layout
+# UTF-8 encoded
+
+
+type OVERLAY
+
+
+
+
+key 2 {
+	label:	'2'
+	base:	'2'
+	shift:	'"'
+}
+key A {
+	label:	'P'
+	base:	'p'
+	shift:	'\u00a3'
+}
+key 4 {
+	label:	'4'
+	base:	'4'
+	shift:	'₹'
+	ralt:	'\u20ac'
+}
+key APOSTROPHE {
+	label:	'\''
+	base:	'\''
+	shift:	'@'
+}
+key POUND {
+	label:	'#'
+	base:	'#'
+	shift:	'~'
+	ralt:	'\\'
+	shift+ralt:	'|'
+}
+key GRAVE {
+	label:	'`'
+	base:	'`'
+	shift:	'\u00ac'
+	ralt:	'|'
+}
